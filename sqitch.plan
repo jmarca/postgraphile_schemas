@@ -1,0 +1,4 @@
+%syntax-version=1.0.0
+%project=postgraphile_schemas
+
+schemas 2020-04-20T14:57:16Z James E. Marca <james@activimetrics.com> # Add schemas according to postgraphile starter
