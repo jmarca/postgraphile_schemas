@@ -13,7 +13,7 @@
     "install": "npm run sqitch:deploy"
   },
   "dependencies": {
-    "postgraphile_roles": "file:tmp/postgraphile_roles"
+    "postgraphile_roles": "git+ssh://gitolite:a/jmarca/postgraphile_related/postgraphile_roles"
   },
   "repository": {
     "type": "git",
