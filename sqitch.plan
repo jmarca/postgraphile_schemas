@@ -2,3 +2,4 @@
 %project=postgraphile_schemas
 
 schemas 2020-04-20T14:57:16Z James E. Marca <james@activimetrics.com> # Add schemas according to postgraphile starter
+permissions [schemas postgraphile_roles:owner_role postgraphile_roles:authenticated_role postgraphile_roles:anonymous_role] 2020-04-20T19:00:13Z James E. Marca <james@activimetrics.com> # Add permissions for schemas; also revoke some permissions from users
