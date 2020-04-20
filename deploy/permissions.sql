@@ -11,7 +11,7 @@ alter default privileges revoke all on sequences from public;
 alter default privileges revoke all on functions from public;
 revoke all on schema public from public;
 
-grant all on schema public to :DATABASE_OWNER;
+grant all on schema public, app_public, app_hidden to :DATABASE_OWNER;
 grant usage on schema public, app_public, app_hidden to :DATABASE_VISITOR;
 
 alter default privileges in schema public, app_public, app_hidden grant usage, select on sequences to :DATABASE_VISITOR;
