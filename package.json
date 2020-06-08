@@ -10,7 +10,8 @@
     "test": "PGUSER=${PGUSER:=postgres} PGHOST=${PGHOST:=127.0.0.1} PGPORT=${PGPORT:=5432} PGDATABASE=${PGDATABASE:=sqitch} pg_prove test/*.sql",
     "sqitch:deploy": "PGUSER=${PGUSER:=postgres} PGHOST=${PGHOST:=127.0.0.1} PGPORT=${PGPORT:=5432} PGDATABASE=${PGDATABASE:=sqitch} sqitch deploy",
     "sqitch:revert": "PGUSER=${PGUSER:=postgres} PGHOST=${PGHOST:=127.0.0.1} PGPORT=${PGPORT:=5432} PGDATABASE=${PGDATABASE:=sqitch} sqitch revert -y",
-    "install": "npm run sqitch:deploy"
+      "install": "npm run sqitch:deploy",
+      "preuninstall": "npm run sqitch:revert"
   },
   "dependencies": {
     "postgraphile_roles": "git+ssh://gitolite:a/jmarca/postgraphile_related/postgraphile_roles"
